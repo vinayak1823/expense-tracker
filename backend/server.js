@@ -10,6 +10,9 @@ connectDB()
 const transactions = require('./routes/transactions')
 
 const app = express()
+
+app.use(express.json())
+
 const port = process.env.PORT
 
 app.use('/api/transactions', transactions)
