@@ -4,8 +4,11 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
+const transactions = require('./routes/transactions')
+
 const app = express()
 const port = process.env.PORT
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use('/api/transactions', transactions)
+
 app.listen(port, () => console.log(`Port running on ${port}`))
