@@ -1,8 +1,11 @@
 const express = require('express')
 const morgan = require('morgan')
 const dotenv = require('dotenv')
+const connectDB = require('./config/db')
 
 dotenv.config()
+
+connectDB()
 
 const transactions = require('./routes/transactions')
 
