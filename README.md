@@ -2,7 +2,9 @@
 
 Keep track of income and expenses. It is a full stack expense tracker build with MERN stack.
 
-`change .env file for your environment variables`
+```
+change .env file for your environment variables
+```
 
 ```
 npm install
