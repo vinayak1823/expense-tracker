@@ -17,7 +17,7 @@ export const Transaction = ({ transaction }) => {
       <button
         className='delete-btn'
         onClick={() => {
-          deleteTransaction(transaction.id)
+          deleteTransaction(transaction._id)
         }}
       >
         x
